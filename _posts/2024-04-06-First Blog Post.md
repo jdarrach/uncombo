@@ -6,4 +6,4 @@ tags: test flower photo
 
 This is some text for the second test blog post. This is some text for the second test blog post. This is some text for the second test blog post. This is some text for the second test blog post.
 
-![picture of a flower](/assets/IMGP0059-sm.JPG)
+![picture of a flower]({{ site.baseurl }}/assets/IMGP0059-sm.JPG)
