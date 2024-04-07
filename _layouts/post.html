@@ -9,3 +9,8 @@ layout: default
 >
 
 {{ content }}
+
+<h3>Tags: </h3>
+{% for tag in page.tags %}
+<a href="/tags#{{ tag }}">{{ tag }}</a>
+{% endfor %}
