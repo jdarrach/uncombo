@@ -4,6 +4,8 @@ layout: default
 
 <h2>{{ page.title }}</h2>
 
+<p>{{ site.url | relative_url}}</p>
+
 {{ content }}
 
 {% for tag in site.tags %}
