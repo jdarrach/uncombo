@@ -71,11 +71,23 @@ aside {
   border-bottom: 1px solid lighten($light, 30%);
   box-shadow: 0px 1px 1px RGBA(4, 25, 54, 0.1);
   nav {
-    float: left;
+    display:flex;
+	justify-content:space-between;
+	align-items:center;
     max-width: 800px;
     margin: 0 auto;
+	a{
+	  display:flex;
+	  align-items:center;
+	  text-decoration:none;
+	  font-size:1.2em;
+	}
+	a:hover{
+	  text-decoration:none;
+	  color: $link-color;
+	}
     ul {
-      margin: 0;
+	  margin-left: auto;
       padding: 0;
       list-style: none;
       li {
@@ -86,6 +98,7 @@ aside {
           display: block;
           padding: 15px;
           font-family: 'Muli', sans-serif;
+		  font-size:1em;
           line-height: 20px;
           margin-bottom: -1px;
           box-shadow: 0;
