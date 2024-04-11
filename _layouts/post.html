@@ -1,16 +1,21 @@
 ---
 layout: default
 ---
+<div class="postheader">
+	<h1 class="posttitle">{{ page.title }}</h1>
+	<h3>{{ page.subtitle }}</h3>
+	<time
+	  >{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author
+	  }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</time>
+</div>
 
-<h2>{{ page.title }}</h2>
-<time
-  >{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author
-  }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</time
->
-
+<div class="postcontent">
 {{ content }}
+</div>
 
 <h3>Tags: </h3>
-{% for tag in page.tags %}
-<a href="{{ site.baseurl }}/tags#{{ tag }}">{{ tag }}</a>
-{% endfor %}
+<div class="posttags">
+	{% for tag in page.tags %}
+	<a href="{{ site.baseurl }}/tags#{{ tag }}">{{ tag }}</a>
+	{% endfor %}
+</div>

@@ -7,10 +7,23 @@ layout: default
 {{ content }}
 
 {% for tag in site.tags %}
-  <h3 id="{{ tag[0] }}">{{ tag[0] }}</h3>
-  <ul>
-    {% for post in tag[1] %}
-      <li><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+  <div>
+	<span id="{{ tag[0] }}"></span>
+    <span class="posttags tagspage"><p>{{ tag[0] }}</p></span>
+  </div>
+  <div class="blogposts tags">
+	{% for post in tag[1] %}
+	<div class="postcard">
+	  <a href="{{ post.url }}">
+		<img src="{{ post.thumbnail }}">
+	  </a>
+	  <div class="posttitle">
+		  <a href="{{ post.url }}">
+			{{ post.title }}
+		  </a>
+		  <p class="postdate">{{ post.date | date: "%m/%d/%Y"}}</p>
+	  </div>
+	</div>
+	{% endfor %}
+</div>
 {% endfor %}

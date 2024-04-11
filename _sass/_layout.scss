@@ -1,3 +1,6 @@
+html{
+	scroll-margin-top: 180px;
+}
 body {
   margin: 0;
   color: $font-color;
@@ -26,6 +29,9 @@ h1 {
 h2 {
   font-size: 2em;
 }
+img{
+	border-radius:4px;
+}
 a,
 a:visited {
   color: $link-color;
@@ -47,7 +53,7 @@ header {
   align-items: center;
 }
 main {
-  padding: 0 15px;
+  padding: 85px 15px 0 15px;
   max-width: $content-width;
   margin: 0 auto;
 }
@@ -74,7 +80,7 @@ aside {
     display:flex;
 	justify-content:space-between;
 	align-items:center;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
 	a{
 	  display:flex;
@@ -119,6 +125,134 @@ aside {
   }
 }
 footer {
-  text-align: center;
-  padding: 40px;
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:center;
+	flex-wrap:wrap;
+	gap:10px;
+	padding: 40px 20px;
+}
+.foot2{
+	margin:0;
+}
+
+/* top section of home page */
+.home{
+	display:flex;
+	padding:20px 0;
+	gap:40px;
+	align-items:center;
+	margin-bottom:40px;
+}
+.home h1{
+	line-height:.6em;
+}
+
+/* blog posts with thumbnails */
+.blogposts{
+	display:flex;
+	padding-top:20px;
+	justify-content:space-between;
+	img{
+		max-width:360px;
+	}	
+}
+.postcard{
+	display:flex;
+	flex-direction:column;
+	align-items:start;
+	justify-content:space-between;
+	text-align:left;
+}
+.posttitle a{
+	text-decoration:none;
+}
+.tags{
+	justify-content:flex-start;
+	flex-direction:row;
+	gap:42px;
+}
+
+/* recent posts */
+.recent{
+	h3{
+		display:inline;
+		padding-bottom:2px;
+		border-bottom:2px solid $main;
+	}
+}
+hr{
+	height:1px;
+	border:none;
+	border-top: 1px dotted $main;
+	margin:0;
+}
+.allposts{
+	padding-top:10px;
+	padding-bottom:40px;
+	a{
+		text-decoration:none;
+	}
+}
+
+/* post tags */
+.posttags{
+	font-size:.8em;
+	margin-top:8px;
+	a{
+		text-decoration:none;
+		padding:3px 6px;
+		background-color:$main;
+		border-radius:2px;
+		font-weight:200;
+		color:white;
+	}
+	p{
+		text-decoration:none;
+		padding:3px 6px;
+		background-color:$main;
+		border-radius:2px;
+		font-weight:200;
+		color:white;
+	}
+}
+.tagspage{
+	display:inline-block;
+	font-size:1em;
+}
+/* prevents from anchor links getting hidden behind nav bar */
+:target{
+	display:block;
+	position:relative;
+	top:-80px;
+	visibility:hidden;
+}
+.postdate{
+	font-size:.8em;
+	color:gray;
+	margin:4px 0;
+}
+
+/* blog post styling */
+.postheader{
+	margin:0;
+	h1{
+		font-size:3em;
+		margin:10px 0;
+	}
+	h3{
+		margin:0 0 10px 0;
+	}
+	time{
+		font-size:0.9em;
+	}
+}
+.postcontent{
+	padding-top:40px;
+	width:90%;
+	margin:auto;
+	img{
+		width:100%;
+	}
 }
