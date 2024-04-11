@@ -21,11 +21,11 @@ layout: default
 	  <div class="blogposts">
 		  {% for post in site.posts limit:3 %}
 		  <div class="postcard">
-			  <a href="{{ post.url }}">
-				<img src="{{ post.thumbnail }}">
+			  <a href="{{ site.baseurl }}/{{ post.url }}">
+				<img src="{{ site.baseurl }}/{{ post.thumbnail }}">
 			  </a>
 			  <div class="posttitle">
-				  <a href="{{ post.url }}">
+				  <a href="{{ site.baseurl }}/{{ post.url }}">
 					{{ post.title }}
 				  </a>
 				  <div class="posttags">
