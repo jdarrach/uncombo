@@ -143,23 +143,34 @@ footer {
 	margin-bottom:40px;
 }
 .home h1{
-	line-height:.6em;
+	line-height:1;
+	margin:0;
+	font-size:3em;
 }
 
 /* blog posts with thumbnails */
 .blogposts{
-	display:flex;
+	/*display:flex;
+	flex-wrap:wrap;
+	flex-flow: row wrap;
+	justify-content:space-between;*/
+
+	display:grid;
+	gap:20px 40px;
+	grid-template-columns: repeat(1, 360px);
+	justify-content:center;
+	
 	padding-top:20px;
-	justify-content:space-between;
+	margin:0 auto;
 	img{
 		max-width:360px;
-	}	
+	}
 }
 .postcard{
 	display:flex;
 	flex-direction:column;
 	align-items:start;
-	justify-content:space-between;
+	justify-content:start;
 	text-align:left;
 }
 .posttitle a{
@@ -198,8 +209,10 @@ hr{
 	font-size:.8em;
 	margin-top:8px;
 	a{
+		display:inline-block;
 		text-decoration:none;
 		padding:3px 6px;
+		margin-bottom:4px;
 		background-color:$main;
 		border-radius:2px;
 		font-weight:200;
@@ -251,5 +264,78 @@ hr{
 	margin:auto;
 	img{
 		width:100%;
+	}
+}
+/* affiliate note and links styling */
+.affiliate{
+	line-height:1;
+	padding-top:10px;
+	p{
+		margin:0;
+		padding-bottom:8px;
+	}
+	a{
+		margin:0;
+		position:relative;
+		top:2px;
+		display:inline-block;
+		overflow:hidden;
+		white-space:nowrap;
+		text-overflow:ellipsis;
+		max-width:250px;
+	}
+}
+
+/* styling for page.html layout */
+.pageheading{
+	display:flex;
+	gap:40px;
+	justify-content:center;
+	align-items:center;
+	img{
+		max-width:200px;
+	}
+	p{
+		margin:0;
+		font-size:1.2em;
+	}
+}
+
+/* search styling */
+#search-article{
+	max-width:80%;
+	margin:0 auto;
+	#search-container{
+		margin-top:40px;
+		a{
+			text-decoration:none;
+			img{
+				width:100%;
+				max-height:200px;
+				object-fit:cover;
+			}
+		}
+	}
+	#results-container{
+		padding:0;
+		display:flex;
+		flex-direction:column;
+		max-width:100%;
+		padding:40px 0 0 0;
+		margin:0 auto;
+		h2{
+			display:inline-block;
+			margin:0;
+			padding-bottom:20px;
+		}
+	}
+	input{
+		padding:4px 10px;
+		font-size:1.2em;
+		font-family: $font-style;
+		width:100%;
+	}
+	#search-input{
+		margin:0 auto;
 	}
 }

@@ -10,7 +10,19 @@ layout: default
 </div>
 
 <div class="postcontent">
-{{ content }}
+	{{ content }}
+
+	<div class="affiliate">
+		{% if page.affiliatenote %}
+		<p><i>{{ page.affiliatenote  }}</i></p>
+		{% endif %}
+		{% if page.affiliatelink %}
+		<p>Affiliate link: <a href="{{ page.affiliatelink }}">https://www.fakesite.com/affiliate-link</a></p>
+		{% endif %}
+		{% if page.affiliatelink %}
+		<p>Non-affiliate link: <a href="{{ page.nonaffiliatelink }}">https://www.fakesite.com/non-affiliate-link</a></p>
+		{% endif %}
+	</div>
 </div>
 
 <h3>Tags: </h3>

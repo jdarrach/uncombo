@@ -2,6 +2,19 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
+<h1>{{ page.heading }}</h1>
+
+<div class="pageheading">
+	<div>
+		{% if page.headingimg %}
+		<img src="{{ page.headingimg }}">
+		{% endif %}
+	</div>
+	<div>
+		{% if page.headingtagline %}
+		<p>{{ page.headingtagline }}</p>
+		{% endif %}
+	</div>
+</div>
 
 {{ content }}
