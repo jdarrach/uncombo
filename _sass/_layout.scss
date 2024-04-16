@@ -298,12 +298,15 @@ hr{
 
 /* styling for page.html layout */
 .pageheading{
-	display:flex;
+	display:block;
 	gap:40px;
 	justify-content:center;
 	align-items:center;
 	img{
 		max-width:200px;
+		margin:0 auto;
+		display:block;
+		padding-bottom:20px;
 	}
 	p{
 		margin:0;
