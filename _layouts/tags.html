@@ -14,12 +14,12 @@ layout: default
   <div class="blogposts tags">
 	{% for post in tag[1] %}
 	<div class="postcard">
-	  <a href="{{ post.url }}">
+	  <a href="{{ site.baseurl }}{{ post.url }}">
 		<img src="{{ site.baseurl }}/{{ post.thumbnail }}">
 		<!---<img src="{{ post.thumbnail }}">-->
 	  </a>
 	  <div class="posttitle">
-		  <a href="{{ post.url }}">
+		  <a href="{{ site.baseurl }}{{ post.url }}">
 			{{ post.title }}
 		  </a>
 		  <p class="postdate">{{ post.date | date: "%m/%d/%Y"}}</p>
