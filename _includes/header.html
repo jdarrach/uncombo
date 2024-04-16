@@ -6,7 +6,7 @@
 			</a>
 			
 			<ul>
-				<li><a href="/search" class="fa fa-search fa-lg"></a></li>
+				<li><a href="{{ site.baseurl }}/search" class="fa fa-search fa-lg"></a></li>
 				{% for page in site.pages %} {% if page.title %}
 				<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
 				{% endif %} {% endfor %}
