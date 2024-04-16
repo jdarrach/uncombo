@@ -5,7 +5,7 @@ layout: default
 <div class="blogposts">
 	{% for post in paginator.posts %}
 	<div class="postcard">
-	  <a href="{{ post.url }}">
+	  <a href="{{ site.baseurl }}/{{ post.url }}">
 		<img src="{{ site.baseurl }}/{{ post.thumbnail }}">
 		<!---<img src="{{ post.thumbnail }}">-->
 	  </a>
