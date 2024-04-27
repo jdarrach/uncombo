@@ -1,6 +1,8 @@
 ---
 layout: searchpage
 permalink: /search/
+title: Search uncombo
+exclude: true
 ---
 
 <h1>What are you looking for?</h1>
