@@ -10,7 +10,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 .main-color{
-  color: $main; !important
+  color: $main !important;
 }
 .lt-color{
   color: $alt-main;
@@ -45,7 +45,7 @@ a:visited {
   font-weight: bold;
 }
 a:hover {
-  color: $link-hover-color;
+  color: $main;
   text-decoration: underline;
 }
 header {
@@ -96,7 +96,7 @@ aside {
 	}
 	a:hover{
 	  text-decoration:none;
-	  color: $link-color;
+	  color: $link-hover-color;
 	}
     ul {
 	  margin-left: auto;
