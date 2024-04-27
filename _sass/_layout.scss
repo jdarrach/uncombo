@@ -129,9 +129,9 @@ aside {
           box-shadow: 0;
           &:hover,
           &:active {
-            background: $alt-main;
+            background: $header;
             text-decoration: none;
-            color: $link-hover-color;
+            color: $alt-light;
           }
         }
       }
