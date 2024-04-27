@@ -9,6 +9,12 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
+.main-color{
+  color: $main;
+}
+.lt-color{
+  color: $alt-main;
+}
 h1,
 h2,
 h3 {
