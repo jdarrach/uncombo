@@ -129,7 +129,7 @@ aside {
           box-shadow: 0;
           &:hover,
           &:active {
-            background: $header;
+            background: linear-gradient(45deg, $main, $alt-light);
             text-decoration: none;
             color: $link-hover-color;
           }
