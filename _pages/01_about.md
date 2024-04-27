@@ -2,7 +2,7 @@
 layout: page
 title: About
 heading: About Blog Name
-headingimg: /assets/pattern-small.png
+headingimg: /assets/uncombo banner.jpg
 headingtagline: This is the tagline which acts as a short intro to what the content on this page all about and what the reader can expect when they navigate to this page on the site.
 permalink: /about/
 ---
