@@ -10,7 +10,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 .main-color{
-  color: $main;
+  color: $main; !important
 }
 .lt-color{
   color: $alt-main;
