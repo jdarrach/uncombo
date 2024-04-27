@@ -12,6 +12,9 @@
 @media screen and (min-width: 1200px){
 	.home{
 		display:flex;
+		img{
+			min-width:100px;
+		}
 	}
 	.blogposts{
 		grid-template-columns: repeat(3, 1fr);
