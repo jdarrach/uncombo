@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About uncombo
-heading: About Blog Name
+title: About
+heading: About uncombo
 headingimg: /assets/pattern-bg-small.jpg
 headingtagline: This is the tagline which acts as a short intro to what the content on this page all about and what the reader can expect when they navigate to this page on the site.
 permalink: /about/
