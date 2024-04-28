@@ -379,3 +379,6 @@ hr{
 		margin:0 auto;
 	}
 }
+.pagination .previous-inactive, .next-inactive{
+	color:$light;
+}
