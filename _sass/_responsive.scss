@@ -3,6 +3,11 @@
 	.pageheading{
 		display:flex;
 	}
+	.home{
+		img{
+			max-height:1000px;
+		}
+	}
 }
 @media screen and (min-width: 820px){
 	.blogposts{
